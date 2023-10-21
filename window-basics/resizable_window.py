@@ -21,6 +21,10 @@ def main():
     # Create a clock object to control frame rate
     clock = pygame.time.Clock()
 
+    # Load assets
+
+    # Intitalize variables
+
     # Main loop
     while True:
         # Event handling
