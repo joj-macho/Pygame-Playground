@@ -29,9 +29,6 @@ The programs in the "Simple Animations" demonstrate creating basic animations us
 
 - **Initialize Variables:**
     - Initialize key variables used in the program:
-        - `IMG_WIDTH_HEIGHT` stores the width and height of the image.
-        - `MAX_WIDTH` defines the maximum X-coordinate to keep the image within the window.
-        - `MAX_HEIGHT` defines the maximum Y-coordinate to keep the image within the window.
         - `image_x` sets the initial X-coordinate of the image.
         - `image_y` sets the initial Y-coordinate of the image.
         - `speed_x` defines the horizontal speed of the image.

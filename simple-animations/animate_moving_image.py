@@ -9,7 +9,11 @@ DARK_GRAY = (75, 75, 75)  # Color constant for dark grey color
 WINDOW_WIDTH = 800  # Width of the window
 WINDOW_HEIGHT = 600  # Height of the window
 FRAMES_PER_SECOND = 30  # Frame rate for the game
+
 IMAGE_SPEED = 5  # Speed / Number of pixels to move the image
+IMG_WIDTH_HEIGHT = 100  # Width and height of the image
+MAX_WIDTH = WINDOW_WIDTH - IMG_WIDTH_HEIGHT  # Maximum X-coordinate to keep image within the window
+MAX_HEIGHT = WINDOW_HEIGHT - IMG_WIDTH_HEIGHT  # Maximum Y-coordinate to keep image within the window
 
 BASE_PATH = Path(__file__).resolve().parent  # Base path for asset loading
 
@@ -34,10 +38,6 @@ def main():
     background = pygame.image.load(path_to_background)
     
     # Initialize variables
-    IMG_WIDTH_HEIGHT = 100  # Width and height of the image
-    MAX_WIDTH = WINDOW_WIDTH - IMG_WIDTH_HEIGHT  # Maximum X-coordinate to keep image within the window
-    MAX_HEIGHT = WINDOW_HEIGHT - IMG_WIDTH_HEIGHT  # Maximum Y-coordinate to keep image within the window
-
     image_x = 100  # Initial X-coordinate of the image
     image_y = 100  # Initial Y-coordinate of the image
 
