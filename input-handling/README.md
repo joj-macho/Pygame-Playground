@@ -72,7 +72,7 @@ The primary output consists of the graphical window with interactive input handl
 
 #### On Click Key Presses (`on_click_key_press.py`) Output:
 
-You can move the image by clicking arrow keys.
+Each key press results in an immediate change in the image's position.
 
 <p align="center">
   <img src="output/onclick-output.gif" alt='Onclick Output'>
@@ -80,7 +80,7 @@ You can move the image by clicking arrow keys.
 
 #### Continuous Key Press (`continuous_key_press.py`) Output:
 
-You can continuously move the image by holding down arrow keys.
+The image's position updates as long as the arrow keys are held, creating a fluid and continuous movement effect.
 
 <p align="center">
   <img src="output/continous-output.gif" alt='Continous Output'>
