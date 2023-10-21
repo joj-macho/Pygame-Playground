@@ -23,8 +23,10 @@ Each program here showcases a specific aspect of window creation in Pygame. Thes
     - Initialize Pygame using `pygame.init()`, which prepares the modules for use, including hardware setup.
 
 - **Create a window with specific properties:**
-    - Use `pygame.display.set_mode()` to create a display surface (window) with specified dimensions (e.g., 800x600 pixels).
+    - Use `pygame.display.set_mode()` to create a display surface (window) with specified dimensions (e.g., I use 800x600 pixels in the demonstrations here).
     - This function returns a Surface object representing the display, and it can accept flags and depth parameters for display creation.
+        - In the `fullscreen_window.py` program, use the `FULLSCREEN` flag for the second parameter of `set_mode`. That is, `window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT), pygame.FULLSCREEN)`. This creates a display that fills the entire screen. Note that when you go full screen, your video card will probably switch to a different video mode, which will change the width and height of the display and potentially how many colors it can show at one time.
+        - In the `resizable_window.py` program, use the `RESIZABLE` flag for the second parameter of `set_mode`. That is, `window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT), pygame.RESIZABLE)`. This creates a resizable display.
 
 - **Enter the main loop:**
     - The main loop is structured to run indefinitely, managing the window's content, typically refreshing once per screen cycle.
@@ -51,6 +53,8 @@ Within the main game loop:
 ## Program Input & Output
 
 These programs are primarily about window creation, so the output is the graphical window itself, customized based on the particular program's requirements.
+
+The `fullscreen_window.py` program will display will create a display that fills the entire screen.
 
 #### blank_window.py output
 
