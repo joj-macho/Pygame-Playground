@@ -7,6 +7,7 @@
 #### Programs
 - [Color Transitions](color_transitions.py): This program shows how to create smooth color transitions over time by using mathematical functions to calculate RGB values.
 - [Gradient Background](gradient_background.py): This program demonstrates how to create a gradient background by adjusting the color based on the vertical position.
+- [Random Pixel Colors](pixel_colors.py): This program continuously generates random pixel colors on the screen.
 
 ## How it Works
 
@@ -36,6 +37,7 @@ Within the main game loop:
 - **Handle Game/Program Logic:**
     - In the "Color Transitions" program, this section calculates colors based on time to create smooth transitions.
     - In the "Gradient Background" program, this section creates a gradient by adjusting color based on the vertical position.
+    - In the "Random Pixel Colors" program, it continuously generates random pixel colors.
 
 - **Update the Display:**
     - Clear the display surface before drawing new content on the screen.
@@ -64,4 +66,12 @@ This program creates smooth color transitions over time by adjusting the backgro
 
 <p align="center">
   <img src="output/color-trans-output.gif" alt='Color Transitions Output'>
+</p>
+
+#### Random Pixel Colors (random_pixel_colors.py) Output
+
+This program continuously generates random pixel colors on the screen.
+
+<p align="center">
+  <img src="output/pixel-output.gif" alt='Random Pixel Colors Output'>
 </p>
