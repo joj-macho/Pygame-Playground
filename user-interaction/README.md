@@ -8,6 +8,7 @@
 
 - [Simple Button Interaction](simple_btn_interaction.py): This program demonstrates the interaction with a simple button.
 - [Image Button Interaction](image_btn_interaction.py): This program showcases interaction with an image button that changes appearance when clicked.
+- [Mouse Tracer](mouse_tracer.py): This program tracks and displays the mouse position on the screen and allows users to adjust the line width with the up and down arrow keys.
 
 ## How it Works
 
@@ -33,6 +34,7 @@ The programs in "User Interaction" demonstrate different aspects of user interac
     - In both programs, initialize key variables used in the program:
         - In the "Simple Button Interaction" program, create a rectangle representing the button and a counter to track button clicks.
         - In the "Image Button Interaction" program, initialize variables for button states and tracking button clicks.
+        - In the "Mouse Tracer" program, initialize variables to store and draw points based on mouse movement, as well as control the line width.
 
 - **Enter the main loop:**
     - The main loop runs indefinitely, managing the window's content and refreshing once per screen cycle.
@@ -44,14 +46,17 @@ Within the main game loop:
     - Listen for the QUIT event to detect the user clicking the window's close button.
     - Perform necessary cleanup by calling `pygame.quit()` and `sys.exit()` when the program should exit.
     - Detect and handle button clicks based on user interactions with the button element.
+    - In the "Mouse Tracer" program, capture mouse motion events to track the mouse's position and respond to arrow key presses to adjust the line width.
 
 - **Handle Game/Program Logic:**
     - In the "Simple Button Interaction" program, handle button clicks to increase a click counter, demonstrating user interaction.
     - In the "Image Button Interaction" program, display different button images based on button clicks, creating a visual response to user interactions.
+    - In the "Mouse Tracer" program, respond to mouse motion and key presses to provide visual feedback on the screen.
 
 - **Update the Display:**
     - Clear the display surface to erase any prior content before drawing new content on the screen.
-    - In both programs, draw button elements and additional visual content, such as text or images, to provide a user interface for interaction.
+    - In both button programs, draw button elements and additional visual content, such as text or images, to provide a user interface for interaction.
+    - In the "Mouse Tracer" program, display points and the current line width as a visual response to user interactions
 
 - **Control the Frame Rate:**
     - The frame rate is set to 30 frames per second to regulate updates and achieve smooth rendering.
@@ -59,7 +64,7 @@ Within the main game loop:
 
 ## Program Input & Output
 
-The primary output in these programs is the graphical window with interactive elements. User interaction, such as button clicks or image state changes, demonstrates how to handle and respond to user input.
+The primary output in these programs is the graphical window with interactive elements. User interaction, such as button clicks, image state changes, and line width adjustments, demonstrates how to handle and respond to user input.
 
 #### Simple Button Interaction (simple_btn_interaction.py) Output:
 
@@ -73,3 +78,8 @@ The primary output in these programs is the graphical window with interactive el
   <img src="output/image-button-output.gif" alt='Image Button Interaction Output'>
 </p>
 
+#### Mouse Tracer (mouse_tracer.py) Output:
+
+<p align="center">
+  <img src="output/mouse-tracer-output.gif" alt='Mouse Tracer Output'>
+</p>
