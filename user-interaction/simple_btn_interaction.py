@@ -4,6 +4,7 @@ import sys
 
 # Constants
 DARK_GRAY = (75, 75, 75)  # Color constant for dark grey color
+WHITE = (255, 255, 255)  # White color constant
 RED = (255, 0, 0)
 WINDOW_WIDTH = 800  # Width of the window
 WINDOW_HEIGHT = 600  # Height of the window
@@ -54,7 +55,7 @@ def main():
 
         # Render the text
         font = pygame.font.Font(None, 36)
-        text = font.render(f'{click_count} Button Clicks', True, (255, 255, 255))
+        text = font.render(f'{click_count} Button Clicks', True, WHITE)
         text_rect = text.get_rect(center=(WINDOW_WIDTH // 2, 50))
         window.blit(text, text_rect)
 

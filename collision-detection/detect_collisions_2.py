@@ -5,6 +5,7 @@ from pathlib import Path
 
 # Constants
 DARK_GRAY = (75, 75, 75)  # Color constant for dark grey color
+WHITE = (255, 255, 255)  # White color constant
 WINDOW_WIDTH = 800  # Width of the window
 WINDOW_HEIGHT = 600  # Height of the window
 FRAMES_PER_SECOND = 30  # Frame rate for the game
@@ -83,7 +84,7 @@ def main():
 
         # Render the text
         font = pygame.font.Font(None, 36)
-        text = font.render(f"Collision Detected ({collision_count} collisions)", True, (255, 255, 255))
+        text = font.render(f"Collision Detected ({collision_count} collisions)", True, WHITE)
         text_rect = text.get_rect(center=(WINDOW_WIDTH // 2, 50))
         window.blit(text, text_rect)
 

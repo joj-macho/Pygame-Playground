@@ -3,7 +3,6 @@ from pygame.locals import *
 import sys
 from pathlib import Path
 
-
 # Constants
 DARK_GRAY = (75, 75, 75)  # Color constant for dark grey color
 WINDOW_WIDTH = 800  # Width of the window
