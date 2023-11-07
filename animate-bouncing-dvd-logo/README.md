@@ -14,15 +14,15 @@ The DVD Logo Animation is a Python program that uses the Pygame library to creat
 
 The program utilizes the Pygame library to create a graphical window for rendering and animating the DVD logos. Here's how it works:
 
-1. **Initialization**: The `DVDLogo` class is responsible for managing the DVD logo's properties and behavior. In the constructor, it initializes parameters such as the Pygame window, window dimensions, DVD logo dimensions, color, initial position, and random speeds within a specified range.
+- **Initialization**: The `DVDLogo` class is responsible for managing the DVD logo's properties and behavior. In the constructor, it initializes parameters such as the Pygame window, window dimensions, DVD logo dimensions, color, initial position, and random speeds within a specified range.
 
-2. **Animation Loop**: Both `main_dvd_logo.py` and `main_n_dvd_logo.py` contain a common animation loop that manages the Pygame event handling, logo updates, drawing, and rendering. The loop repeats continuously, allowing the logos to bounce around the window.
+- **Animation Loop**: Both `main_dvd_logo.py` and `main_n_dvd_logo.py` contain a common animation loop that manages the Pygame event handling, logo updates, drawing, and rendering. The loop repeats continuously, allowing the logos to bounce around the window.
 
-3. **Bouncing Logic**: The `DVDLogo` class updates the logo's position based on its speed in the `update` method. The logo bounces off the screen edges and specifically, when it hits the boundary of the window, it changes direction and increments a counter to track corner hits.
+- **Bouncing Logic**: The `DVDLogo` class updates the logo's position based on its speed in the `update` method. The logo bounces off the screen edges and specifically, when it hits the boundary of the window, it changes direction and increments a counter to track corner hits.
 
-4. **Drawing**: The `draw` method in the `DVDLogo` class uses Pygame to render the DVD-like logo as an ellipse with the specified color, adds the text "DVD," and draws a border around it. The logo is drawn in its updated position on the Pygame window.
+- **Drawing**: The `draw` method in the `DVDLogo` class uses Pygame to render the DVD-like logo as an ellipse with the specified color, adds the text "DVD," and draws a border around it. The logo is drawn in its updated position on the Pygame window.
 
-5. **Display**: Pygame continually updates the window display, providing smooth animation. The `main` program files are responsible for handling the event loop, updating the logos, and refreshing the display at a specified frame rate.
+- **Display**: Pygame continually updates the window display, providing smooth animation. The `main` program files are responsible for handling the event loop, updating the logos, and refreshing the display at a specified frame rate.
 
 
 ## Program Input & Output
