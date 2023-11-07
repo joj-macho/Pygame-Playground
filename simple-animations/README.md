@@ -6,7 +6,9 @@
 
 #### Programs
 
+- [Animate Moving Object](animate_moving_object.py): This program shows a simple animation by moving an object around the screen.
 - [Animate Moving Image](animate_moving_image.py): This program shows a simple animation by moving an image around the screen.
+- [Animate Falling Snow](animate_falling_snow.py): This program demonstrates an animation of falling snowflakes.
 
 ## How it Works
 
@@ -29,10 +31,11 @@ The programs in the "Simple Animations" demonstrate creating basic animations us
 
 - **Initialize Variables:**
     - Initialize key variables used in the program:
-        - `image_x` sets the initial X-coordinate of the image.
-        - `image_y` sets the initial Y-coordinate of the image.
-        - `speed_x` defines the horizontal speed of the image.
-        - `speed_y` defines the vertical speed of the image.
+        - `image_x` and `image_y` sets the initial coordinate of the image.
+        - `speed_x` and `speed_y` defines the horizontal and vertical speed of the image.
+        - `object_x` and `object_y` set the initial coordinates of the moving object.
+        - `object_speed_x` and `object_speed_y` define the speed of the object's movement.
+        - `snowflakes` is a list of dictionaries representing individual snowflakes.
 
 - **Enter the main loop:**
     - The main loop runs indefinitely, managing the window's content and refreshing once per screen cycle.
@@ -45,10 +48,7 @@ Within the main game loop:
     - Perform necessary cleanup by calling `pygame.quit()` and `sys.exit()` when the program should exit.
 
 - **Handle Game/Program Logic:**
-    - Check if the image is out of the window boundaries to ensure it stays within the visible window area. If the image exceeds these boundaries:
-        - `speed_x` is reversed to change the horizontal (X) direction.
-        - `speed_y` is reversed to change the vertical (Y) direction.
-    - The updated image location adds the speed in both horizontal (X) and vertical (Y) directions to make the image move smoothly across the window. This logic creates the effect of the image bouncing off the window edges.
+    - Implement the program-specific logic, such as moving an object or animating snowflakes.
 
 
 - **Update the Display:**
@@ -63,8 +63,22 @@ Within the main game loop:
 
 The primary output is the graphical window with animations or effects specific to each program.
 
+
+
+#### Animate Moving Object (`animate_moving_object.py`) Output:
+
+<p align="center">
+  <img src="output/animate-object-output.gif" alt='Animate Moving Object Output'>
+</p>
+
 #### Animate Moving Image (`animate_moving_image.py`) Output:
 
 <p align="center">
   <img src="output/animate-output.gif" alt='Animate Moving Image Output'>
+</p>
+
+#### Animate Falling Snow (`animate_falling_snow.py`) Output:
+
+<p align="center">
+  <img src="output/animate-snow-output.gif" alt='Animate Falling Snow Output'>
 </p>
