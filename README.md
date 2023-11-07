@@ -43,6 +43,17 @@ Welcome to the Pygame-Playground repository! This repository contains an assortm
   - [Character Movement with Multiple Images](character-movement/move_character_1.py): This program displays character movement by switching between various character images to create the illusion of walking.
   - [Realistic Character Movement with Sprite Sheet](character-movement/move_character_2.py): This program simulates realistic character movement using a sprite sheet to create smooth animation.
 
+### Animations ⏯️ 
+
+- **Bouncing Ball Animation**:
+  - [Bouncing Ball Animation](animate-bouncing-ball/) - An animation of bouncing ball(s).
+
+- **DVD Logo Animation**:
+  - [DVD Logo Animation](animate-bouncing-dvd-logo/) - An animation of the iconic bouncing DVD logo with user controls for pausing, restarting, or quitting the animation.
+
+- **Snow Animation**:
+    - [Snow Animation](animate-falling-snow/) - An animation of falling snowflakes.
+
 ### Games 🎮
 
 - **Target Shooting Game**:
