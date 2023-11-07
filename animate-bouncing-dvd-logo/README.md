@@ -27,8 +27,18 @@ The program utilizes the Pygame library to create a graphical window for renderi
 
 ## Program Input & Output
 
-There is no direct user input required to run the program. Users can execute `main_dvd_logo.py` or `main_n_dvd_logo.py` to start the DVD logo animation. The animations will run until the user closes the Pygame window.
+Execute `main_dvd_logo.py` or `main_n_dvd_logo.py` to start the DVD logo animation. The animations will run until the user closes the Pygame window.
 
 The output is a graphical display of the DVD logo animation. Depending on the version (single logo or multi-colored logos), users will see one or multiple DVD logos bouncing around a window. The corner hits are displayed as a counter on the window to track how many times the logos hit the corners.
 
+#### Single logo (main_dvd_logo.py) Output
 
+<p align="center">
+  <img src="output/dvd-output.gif" alt='Color Transitions Output'>
+</p>
+
+#### Multi-colored Logos (main_n_dvd_logo.py) Output
+
+<p align="center">
+  <img src="output/dvds-output.gif" alt='Random Pixel Colors Output'>
+</p>
