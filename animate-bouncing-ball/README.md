@@ -8,7 +8,7 @@ The Bouncing Ball Animation is a Python program that utilizes the Pygame library
 
 - `ball.py`: Contains the `Ball` class definition, responsible for managing the properties and behavior of the bouncing balls.
 - `main_ball.py`: The main program file for a basic bouncing ball animation with user controls.
-- `main_n_ball.py`: The main program file for bouncing ball animation with multiple balls and user controls.
+- `main_n_ball.py`: The main program file for multiple bouncing balls animation with and user controls.
 
 ## How It Works
 
