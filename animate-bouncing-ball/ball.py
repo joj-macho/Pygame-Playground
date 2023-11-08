@@ -3,9 +3,7 @@ import random
 from pathlib import Path
 
 class Ball:
-    '''
-    Class to represent the ball in the animation.
-    '''
+    '''Class to represent the ball in the animation.'''
 
     def __init__(self, window, window_width, window_height):
         '''
@@ -28,9 +26,7 @@ class Ball:
         self.initialize_speed()
 
     def load_ball_image(self):
-        '''
-        Load the ball image asset.
-        '''
+        '''Load the ball image asset.'''
         base_path = Path(__file__).resolve().parent
         path_to_ball = str(base_path) + '/images/ball.png'
         self.image = pygame.image.load(path_to_ball)
