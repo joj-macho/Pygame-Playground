@@ -19,7 +19,7 @@ def main():
     pygame.init()
 
     # Create a window
-    screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+    window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
     pygame.display.set_caption('Shooting Range Game')
     clock = pygame.time.Clock()  # Create a clock object to control frame rate
 
@@ -71,7 +71,7 @@ def main():
             target_timer -= 1
             if target_timer <= 0:
                 if len(targets) < max_targets:
-                    targets.append(Target(screen, WINDOW_WIDTH, WINDOW_HEIGHT))
+                    targets.append(Target(window, WINDOW_WIDTH, WINDOW_HEIGHT))
                 target_timer = random.randint(5, 50)  # Set a new random timer
 
             # Update the targets
@@ -81,8 +81,8 @@ def main():
                 if not target.visible:
                     targets.remove(target)
 
-        # Clear the screen
-        screen.fill(DARK_GRAY)
+        # Clear the window
+        window.fill(DARK_GRAY)
 
         # Draw targets
         for target in targets:
@@ -93,13 +93,13 @@ def main():
         hits_text = font.render(f'Hits: {hits}', True, WHITE)
         missed_text = font.render(f'Missed: {missed}', True, WHITE)
 
-        screen.blit(time_text, (10, 10))
-        screen.blit(hits_text, (300, 10))
-        screen.blit(missed_text, (450, 10))
+        window.blit(time_text, (10, 10))
+        window.blit(hits_text, (300, 10))
+        window.blit(missed_text, (450, 10))
 
         if game_over:
             game_over_text = game_over_font.render('Game Over!', True, RED)
-            screen.blit(game_over_text, (WINDOW_WIDTH // 2 - game_over_text.get_width() // 2, WINDOW_HEIGHT // 2 - game_over_text.get_height() // 2))
+            window.blit(game_over_text, (WINDOW_WIDTH // 2 - game_over_text.get_width() // 2, WINDOW_HEIGHT // 2 - game_over_text.get_height() // 2))
 
         # Update the display
         pygame.display.update()
