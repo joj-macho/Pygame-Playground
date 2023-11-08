@@ -46,21 +46,24 @@ Welcome to the Pygame-Playground repository! This repository contains an assortm
 ### Animations ⏯️ 
 
 - **Bouncing Ball Animation**:
-  - [Bouncing Ball Animation](animate-bouncing-ball/) - An animation of bouncing ball(s).
+  - [Bouncing Ball Animation](animate-bouncing-ball/) - An animation of bouncing ball(s) with user controls for pausing, restarting, or quitting the animation.
 
 - **DVD Logo Animation**:
-  - [DVD Logo Animation](animate-bouncing-dvd-logo/) - An animation of the iconic bouncing DVD logo with user controls for pausing, restarting, or quitting the animation.
+  - [DVD Logo Animation](animate-bouncing-dvd-logo/) - An animation of the iconic bouncing DVD logo with a counter for corner hits.
 
 - **Snow Animation**:
     - [Snow Animation](animate-falling-snow/) - An animation of falling snowflakes.
 
 ### Games 🎮
 
-- **Target Shooting Game**:
-  - [Target Shooting Game](target-shooting/target_shooting_game.py): A simple shooting game where you aim and shoot targets that appear on the screen.
+- **Bird Shooter Game**:
+  - [Bird Shooter Game](bird-shooter-game/): Take on the role of a sharpshooter tasked with shooting down birds as they fly across the screen.
 
 - **Coin Collector Game**:
   - [Coin Collector Game](coin-collector/coin_collector_game.py): Collect coins that appear on the screen while avoiding collisions with the boundaries.
+
+- **Shooting Range Game**:
+  - [Shooting-range Game](shooting-range-game/): A simple shooting game where you aim and shoot targets that appear on the screen.
 
 - **Whack-a-Mole Game**:
   - [Whack-a-Mole Game](whack-a-mole/whack_a_mole_game.py): A classic Whack-a-Mole game where moles pop up, and the player needs to click on them.
