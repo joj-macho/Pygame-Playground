@@ -49,3 +49,7 @@ The game combines player interaction, timed challenges, and graphical targets. H
 - If you miss a target, the missed targets counter will increment.
 - After the 20-second time limit, the game will end, and your final score will be displayed on the screen.
 - You will have the option to play the game again or quit the program.
+
+<p align="center">
+  <img src="output/shooting-output.gif" alt='Bird Shooter Output'>
+</p>
