@@ -2,12 +2,16 @@ import pygame
 from pygame.locals import *
 import sys
 
-# Constants
-DARK_GRAY = (75, 75, 75)  # Color constant for dark grey color
+# Colors
+DARK_GRAY = (75, 75, 75)
 WHITE = (255, 255, 255)
 CYAN = (0, 255, 255)
+
+# Screen Dimensions
 WINDOW_WIDTH = 800  # Width of the window
 WINDOW_HEIGHT = 600  # Height of the window
+
+# Game Settings
 FRAMES_PER_SECOND = 30  # Frame rate for the game
 MAX_POINTS = 42  # Maximum number of points to trace
 
@@ -20,18 +24,16 @@ def main():
     # Create the game window
     window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
     pygame.display.set_caption('Mouse Tracer')
-
-    # Create a clock object to control frame rate
-    clock = pygame.time.Clock()
+    clock = pygame.time.Clock()  # Clock object to control frame rate
 
     # Intitalize variables
-    points = []
+    font = pygame.font.Font(None, 48)  # Font for text
+    points = []  # Store points to trace
     line_width = 2  # Default line width
 
     # Main loop
     while True:
-        # Event handling
-        for event in pygame.event.get():
+        for event in pygame.event.get():  # Handle events
             if event.type == QUIT:  # Exit the main loop if the user wants to quit
                 pygame.quit()
                 sys.exit()
@@ -57,8 +59,7 @@ def main():
             # Draw lines to trace the mouse movement
             pygame.draw.lines(window, CYAN, False, points, line_width)
 
-        # Display the line width on the screen
-        font = pygame.font.Font(None, 48)
+        # Draw the line width on the screen
         line_width_text = font.render(f'Line Width: {line_width}', True, WHITE)
         window.blit(line_width_text, (10, 10))
 
@@ -66,7 +67,7 @@ def main():
         pygame.display.update()
 
         # Control the frame rate
-        clock.tick(FRAMES_PER_SECOND)
+        clock.tick(FRAMES_PER_SECOND)  # Cap the frame rate to maintain a consistent speed
 
 
 if __name__ == '__main__':

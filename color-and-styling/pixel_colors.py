@@ -3,10 +3,13 @@ from pygame.locals import *
 import sys
 import random
 
-# Constants
+# Screen Dimensions
 WINDOW_WIDTH = 800  # Width of the window
 WINDOW_HEIGHT = 600  # Height of the window
+
+# Game Settings
 FRAMES_PER_SECOND = 30  # Frame rate for the game
+
 
 def main():
     '''
@@ -16,30 +19,29 @@ def main():
     pygame.init()
 
     # Create a window
-    screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+    window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
     pygame.display.set_caption('Random Pixel Colors')
-
-    # Create a clock object to control frame rate
-    clock = pygame.time.Clock()
+    clock = pygame.time.Clock()  # Clock object to control frame rate
 
     # Main loop
     while True:
-        # Event handling
-        for event in pygame.event.get():
+        for event in pygame.event.get():  # Handle events
             if event.type == QUIT:  # Exit the main loop if the user wants to quit
                 pygame.quit()
                 sys.exit()
 
         # Generate random pixel colors
         random_pixel_colors = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
-        screen.lock()
+        window.lock()
 
         # Create random pixels
         for _ in range(42):
             random_pixel_position = (random.randint(0, WINDOW_WIDTH - 1), random.randint(0, WINDOW_HEIGHT - 1))
-            screen.set_at(random_pixel_position, random_pixel_colors)
+            window.set_at(random_pixel_position, random_pixel_colors)
 
-        screen.unlock()
+        window.unlock()
+
+        # Update the display
         pygame.display.update()
 
         # Control the frame rate
