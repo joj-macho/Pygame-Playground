@@ -49,8 +49,7 @@ Within the main game loop:
     - Set the frame rate to 30 frames per second to regulate updates and achieve smooth rendering.
 
 
-
-## Program Input & Output
+## Program Output
 
 These programs are primarily about window creation, so the output is the graphical window itself, customized based on the particular program's requirements.
 
@@ -58,12 +57,10 @@ The `fullscreen_window.py` program will display will create a display that fills
 
 #### blank_window.py output
 
-<p align="center">
-  <img src="output/blank-output.png" alt='Blank Window Output'>
-</p>
+![Blank Window Output](output/blank-output.png)
+
 
 #### resizable_window.py
 
-<p align="center">
-  <img src="output/resize-output.gif" alt='Resizable Window Output'>
-</p>
+![Resizable Window Output](output/resize-output.gif)
+
