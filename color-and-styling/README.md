@@ -54,24 +54,12 @@ The primary output is the Pygame window customized based on each program's styli
 
 #### Gradient Background (gradient_background.py) Output:
 
-The program creates a visually appealing gradient background by adjusting the color based on the vertical position.
-
-<p align="center">
-  <img src="output/gradient-output.png" alt='Gradient Background Output'>
-</p>
+![Gradient Background Output](output/gradient-output.png)
 
 #### Color Transitions (color_transitions.py) Output
 
-This program creates smooth color transitions over time by adjusting the background color.
-
-<p align="center">
-  <img src="output/color-trans-output.gif" alt='Color Transitions Output'>
-</p>
+![Color Transitions Output](output/color-trans-output.gif)
 
 #### Random Pixel Colors (random_pixel_colors.py) Output
 
-This program continuously generates random pixel colors on the screen.
-
-<p align="center">
-  <img src="output/pixel-output.gif" alt='Random Pixel Colors Output'>
-</p>
+![Random Pixel Colors Output](output/pixel-output.gif)

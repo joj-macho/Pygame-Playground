@@ -56,12 +56,8 @@ The primary output consists of the graphical window with the displayed image(s) 
 
 #### Single image display (`display_image.py`) Output:
 
-<p align="center">
-  <img src="output/image-output.png" alt='Single Image Output'>
-</p>
+![Single Image Output](output/image-output.png)
 
 #### Image + Background image display (`display_image_2.py`) Output:
 
-<p align="center">
-  <img src="output/image-2-output.png" alt='Image and Background Output'>
-</p>
+![Image and Background Output](output/image-2-output.png)

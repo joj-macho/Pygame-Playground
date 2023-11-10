@@ -68,18 +68,12 @@ The primary output in these programs is the graphical window with interactive el
 
 #### Simple Button Interaction (simple_btn_interaction.py) Output:
 
-<p align="center">
-  <img src="output/button-output.gif" alt='Simple Button Interaction Output'>
-</p>
+![Simple Button Interaction Output](output/button-output.gif)
 
 #### Image Button Interaction (image_btn_interaction.py) Output:
 
-<p align="center">
-  <img src="output/image-button-output.gif" alt='Image Button Interaction Output'>
-</p>
+![Image Button Interaction Output](output/image-button-output.gif)
 
 #### Mouse Tracer (mouse_tracer.py) Output:
 
-<p align="center">
-  <img src="output/mouse-tracer-output.gif" alt='Mouse Tracer Output'>
-</p>
+![Mouse Tracer Output](output/mouse-tracer-output.gif)

@@ -74,15 +74,11 @@ The primary output consists of the graphical window with interactive input handl
 
 Each key press results in an immediate change in the image's position.
 
-<p align="center">
-  <img src="output/onclick-output.gif" alt='Onclick Output'>
-</p>
+![Onclick Output](output/onclick-output.gif)
 
 #### Continuous Key Press (`continuous_key_press.py`) Output:
 
 The image's position updates as long as the arrow keys are held, creating a fluid and continuous movement effect.
 
-<p align="center">
-  <img src="output/continous-output.gif" alt='Continous Output'>
-</p>
+![Continous Output](output/continous-output.gif)
 

@@ -54,18 +54,12 @@ These programs showcase different aspects of text rendering, mouse tracking, and
 
 #### Hello World Text (`hello_world_text.py`) Output:
 
-<p align="center">
-  <img src="output/hello_world_text_output.png" alt='Hello World Text Output'>
-</p>
+![Hello World Text Output](output/hello_world_text_output.png)
 
 #### Shapes Display (`display_shapes.py`) Output:
 
-<p align="center">
-  <img src="output/shapes_display_output.png" alt='Shapes Display Output'>
-</p>
+![Shapes Display Output](output/shapes_display_output.png)
 
 #### Mouse Position Tracker (`display_mouse_position.py`) Output:
 
-<p align="center">
-  <img src="output/mouse_tracker_output.gif" alt='Mouse Position Tracker Output'>
-</p>
+![Mouse Position Tracker Output](output/mouse_tracker_output.gif)
