@@ -69,12 +69,8 @@ The primary output is the graphical window showing item that moves and a target.
 
 #### `collision_detection_1.py` Output:
 
-<p align="center">
-  <img src="output/collision-1-output.gif" alt='Onclick Output'>
-</p>
+![Onclick Animation Output](output/collision-1-output.gif)
 
 #### `collision_detection_2.py` Output:
 
-<p align="center">
-  <img src="output/collision-2-output.gif" alt='Continous Output'>
-</p>
+![Continous Animation Output](output/collision-2-output.gif)

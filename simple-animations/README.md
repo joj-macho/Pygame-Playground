@@ -67,18 +67,13 @@ The primary output is the graphical window with animations or effects specific t
 
 #### Animate Moving Object (`animate_moving_object.py`) Output:
 
-<p align="center">
-  <img src="output/animate-object-output.gif" alt='Animate Moving Object Output'>
-</p>
+![Animate Moving Object Output](output/animate-object-output.gif)
 
 #### Animate Moving Image (`animate_moving_image.py`) Output:
 
-<p align="center">
-  <img src="output/animate-output.gif" alt='Animate Moving Image Output'>
-</p>
+![Animate Moving Image Output'](output/animate-output.gif)
+
 
 #### Animate Falling Snow (`animate_falling_snow.py`) Output:
 
-<p align="center">
-  <img src="output/animate-snow-output.gif" alt='Animate Falling Snow Output'>
-</p>
+![Animate Falling Snow Output](output/animate-snow-output.gif)
