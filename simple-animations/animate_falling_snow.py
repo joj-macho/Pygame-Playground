@@ -3,13 +3,16 @@ from pygame.locals import *
 import sys
 import random
 
-# Constants
-DARK_GRAY = (75, 75, 75)  # Color constant for dark grey color
-WHITE = (255, 255, 255)  # White color constant
+# Colors
+DARK_GRAY = (75, 75, 75)  # Dark-grey color
+WHITE = (255, 255, 255)  # White color
+
+# Screen Dimensions
 WINDOW_WIDTH = 800  # Width of the window
 WINDOW_HEIGHT = 600  # Height of the window
-FRAMES_PER_SECOND = 30  # Frame rate for the game
 
+# Game Settings
+FRAMES_PER_SECOND = 30  # Frame rate for the game
 SNOWFLAKE_SIZE = 3  # Width and height of the object
 NUM_SNOWFLAKES = 100  # Number of snowflakes
 
@@ -21,18 +24,15 @@ def main():
 
     # Create a window
     window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-    pygame.display.set_caption('Animate Falling Snow')
-
-    # Create a clock object to control frame rate
-    clock = pygame.time.Clock()
+    pygame.display.set_caption('Falling Snow Animation')
+    clock = pygame.time.Clock()  # Clock object to control frame rate
 
     # Initialize snowflakes
     snowflakes = []
         
     # Main loop
     while True:
-        # Event handling
-        for event in pygame.event.get():
+        for event in pygame.event.get():  # Handle events
             if event.type == QUIT:  # Exit the main loop if the user wants to quit
                 pygame.quit()
                 sys.exit()
