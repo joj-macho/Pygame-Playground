@@ -53,6 +53,4 @@ The game combines player interaction, timed challenges, and animated bird target
 - If a bird escapes off the screen, the escaped bird counter will increment.
 - After the 20-second time limit, the game will end.
 
-<p align="center">
-  <img src="output/bird-output.gif" alt='Bird Shooter Output'>
-</p>
+![Bird Shooter Animation](output/bird-output.gif)

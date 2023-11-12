@@ -31,6 +31,5 @@ The output is a graphical display of falling snowflakes. Users will see snowflak
 
 #### Snow Animation Output
 
-<p align="center">
-  <img src="output/snow-output.gif" alt='Snow Animation Output'>
-</p>
+![Snow Animation Output](output/snow-output.gif)
+

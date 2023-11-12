@@ -31,14 +31,10 @@ Execute `main_dvd_logo.py` or `main_n_dvd_logo.py` to start the DVD logo animati
 
 The output is a graphical display of the DVD logo animation. Depending on the version (single logo or multi-colored logos), users will see one or multiple DVD logos bouncing around a window. The corner hits are displayed as a counter on the window to track how many times the logos hit the corners.
 
-#### Single logo (main_dvd_logo.py) Output
+#### Bouncing Single logo (main_dvd_logo.py) Output
 
-<p align="center">
-  <img src="output/dvd-output.gif" alt='Color Transitions Output'>
-</p>
+![Bouncing DVD Animation](output/dvd-output.gif)
 
-#### Multi-colored Logos (main_n_dvd_logo.py) Output
+#### Bouncing Multi-colored Logos (main_n_dvd_logo.py) Output
 
-<p align="center">
-  <img src="output/dvds-output.gif" alt='Random Pixel Colors Output'>
-</p>
+![Bouncing DVDs Animation](output/dvds-output.gif)

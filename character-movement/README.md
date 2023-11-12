@@ -62,12 +62,8 @@ Both programs focus on character animation and movement, producing character mot
 
 #### Character Movement with Multiple Images (move_character_1.py) Output:
 
-<p align="center">
-  <img src="output/character-movement-1.gif" alt='Character Movement 1 Output'>
-</p>
+![Character Movement 1 Output](output/character-movement-1.gif)
 
 #### Character Movement with Sprite Sheet (move_character_2.py) Output
 
-<p align="center">
-  <img src="output/character-movement-2.gif" alt='Character Movement 2 Output'>
-</p>
+![Character Movement 2 Output](output/character-movement-2.gif)
