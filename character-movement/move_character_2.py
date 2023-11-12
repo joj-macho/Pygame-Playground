@@ -4,10 +4,14 @@ import sys
 import math
 from pathlib import Path
 
-# Constants
-DARK_GRAY = (75, 75, 75)  # Color constant for dark grey color
+# Colors
+DARK_GRAY = (75, 75, 75)  # Dark-grey color
+
+# Screen Dimensions
 WINDOW_WIDTH = 800  # Width of the window
 WINDOW_HEIGHT = 600  # Height of the window
+
+# Game Settings
 FRAMES_PER_SECOND = 30  # Frame rate for the game
 PLAYER_SPEED = 5  # Number of pixels to move the character
 
@@ -15,7 +19,9 @@ PLAYER_SPEED = 5  # Number of pixels to move the character
 NUM_DIRECTIONS = 8  # Number of rows in the sprite sheet for different directions
 NUM_FRAMES_PER_DIRECTION = 4  # Number of frames per direction
 
-BASE_PATH = Path(__file__).resolve().parent  # Base path for asset loading
+# Image Paths
+BASE_PATH = Path(__file__).resolve().parent
+IMAGE_PATH = str(BASE_PATH) + '/images'
 
 
 def main():
@@ -27,18 +33,13 @@ def main():
     # Create a window
     window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
     pygame.display.set_caption('Realistic Character Movement with Sprite Sheet')
-
-    # Create a clock object to control frame rate
-    clock = pygame.time.Clock()
+    clock = pygame.time.Clock()  # Create a clock object to control frame rate
 
     # Load image assets
-    path_to_images = str(BASE_PATH) + '/images'
-    sprite_sheet = load_sprite_sheet(path_to_images + '/Civilian1(black)_Move.png', NUM_DIRECTIONS, NUM_FRAMES_PER_DIRECTION)
+    sprite_sheet = load_sprite_sheet(f'{IMAGE_PATH}/Civilian1(black)_Move.png', NUM_DIRECTIONS, NUM_FRAMES_PER_DIRECTION)
 
     # Set the initial character position and direction
     player_rect = sprite_sheet[0].get_rect()  # Get the rectangle for the character sprite
-    MAX_WIDTH = WINDOW_WIDTH - player_rect.width
-    MAX_HEIGHT = WINDOW_HEIGHT - player_rect.height
     player_rect.center = (WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2)  # Center starting position
     direction = 'north'  # Initial direction
 
@@ -51,6 +52,9 @@ def main():
     player_scale_factor = 2.5  # Adjust this factor to make the character larger
     player_rect.width *= player_scale_factor
     player_rect.height *= player_scale_factor
+
+    MAX_WIDTH = WINDOW_WIDTH - player_rect.width
+    MAX_HEIGHT = WINDOW_HEIGHT - player_rect.height
     
     # Main loop
     while True:
@@ -136,7 +140,7 @@ def main():
 def load_sprite_sheet(filename, rows, cols):
     '''Load a sprite sheet and divide it into individual frames.
 
-    Args:
+    Parameters:
         filename (str): The file path to the sprite sheet image.
         rows (int): The number of rows in the sprite sheet.
         cols (int): The number of columns in the sprite sheet.

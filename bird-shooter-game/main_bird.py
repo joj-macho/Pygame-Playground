@@ -5,7 +5,6 @@ import random
 from pathlib import Path
 from bird import Bird
 
-
 # Colors
 DARK_GRAY = (75, 75, 75)
 RED = (255, 0, 0)
@@ -45,13 +44,15 @@ def main():
     birds = []  # Init empty bird storage.
     wins, losses = 0, 0  # Init wins and losses
     start_time = pygame.time.get_ticks()  # Init timer
-    font = pygame.font.Font(None, 64)  # Text font
+
+    # Font for text
+    large_font = pygame.font.Font(None, 64)
+    font = pygame.font.Font(None, 36)
 
     # Main loop
     while True:
-        # Event handling
-        for event in pygame.event.get():
-            if event.type == QUIT:
+        for event in pygame.event.get():  # Handle events
+            if event.type == QUIT:  # Exit the main loop if the user wants to quit
                 pygame.quit()
                 sys.exit()
 
@@ -88,7 +89,7 @@ def main():
         # Check game over condition
         if elapsed_time >= GAME_DURATION:
             # Game over screen
-            text = font.render('Game Over', True, RED)
+            text = large_font.render('Game Over', True, RED)
             text_rect = text.get_rect(center=(WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2))
             window.blit(text, text_rect)
             pygame.display.update()
@@ -114,7 +115,6 @@ def main():
         window.blit(cursor_image, (cursor_x, cursor_y))
 
         # Render wins and losses
-        font = pygame.font.Font(None, 36)
         wins_text = font.render(f'Birds Shot: {wins}', True, (255, 255, 255))
         losses_text = font.render(f'Birds Escaped: {losses}', True, (255, 255, 255))
         time_text = font.render(f'Time Left: {GAME_DURATION - elapsed_time} seconds', True, (255, 255, 255))

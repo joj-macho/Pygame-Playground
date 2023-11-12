@@ -4,13 +4,17 @@ import sys
 import random
 from target import Target
 
-# Constants
-DARK_GRAY = (75, 75, 75)  # Color constant for dark grey color
-WHITE = (255, 255, 255)  # Color constant for white
+# Colors
+DARK_GRAY = (75, 75, 75)
+WHITE = (255, 255, 255) 
 RED = (255, 0, 0)
-WINDOW_WIDTH = 800  # Width of the window
-WINDOW_HEIGHT = 600  # Height of the window
-FRAMES_PER_SECOND = 30  # Frame rate for the game
+
+# Screen Dimensions
+WINDOW_WIDTH = 800
+WINDOW_HEIGHT = 600
+
+# Game Settings
+FRAMES_PER_SECOND = 30
 
 
 def main():
@@ -23,8 +27,8 @@ def main():
     pygame.display.set_caption('Shooting Range Game')
     clock = pygame.time.Clock()  # Create a clock object to control frame rate
 
-    # Create an empty list to store targets
-    targets = []
+    # Initialize variables 
+    targets = []  # Empty list to store targets
     max_targets = 10  # Maximum number of targets on the screen at once
     target_timer = random.randint(5, 50)  # Random initial timer
 
@@ -33,17 +37,17 @@ def main():
     start_time = pygame.time.get_ticks()
     hits = 0
     missed = 0 
-    time_limit = 20  # 20 seconds
+    time_limit = 20
     game_over = False
 
-    font = pygame.font.Font(None, 24)  # Initialize a font for text
+    # Font for text
+    font = pygame.font.Font(None, 24)
     game_over_font = pygame.font.Font(None, 48)
 
     # Main loop
     while True:
-        # Event handling
-        for event in pygame.event.get():
-            if event.type == QUIT:
+        for event in pygame.event.get():  # Handle events
+            if event.type == QUIT:  # Exit the main loop if the user wants to quit
                 pygame.quit()
                 sys.exit()
 

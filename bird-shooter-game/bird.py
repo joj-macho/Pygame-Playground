@@ -2,16 +2,13 @@ import pygame
 import random
 from pathlib import Path
 
-
 # Bird Animation Settings
 BIRD_FLAP_INTERVAL = 10
 BIRD_SPEED_MIN = 2
 BIRD_SPEED_MAX = 5
 
-# Base Path
-BASE_PATH = Path(__file__).resolve().parent
-
 # Image Paths
+BASE_PATH = Path(__file__).resolve().parent
 IMAGE_PATH = str(BASE_PATH) + '/images'
 BIRD_UP_IMAGE_PATH = f'{IMAGE_PATH}/bird-up.png'
 BIRD_DOWN_IMAGE_PATH = f'{IMAGE_PATH}/bird-down.png'

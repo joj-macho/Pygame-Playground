@@ -4,15 +4,20 @@ import sys
 from pathlib import Path
 import math
 
-# Constants
-DARK_GRAY = (75, 75, 75)  # Color constant for dark grey color
+# Colors
+DARK_GRAY = (75, 75, 75)  # Dark-grey color
+
+# Screen Dimensions
 WINDOW_WIDTH = 800  # Width of the window
 WINDOW_HEIGHT = 600  # Height of the window
+
+# Game Settings
 FRAMES_PER_SECOND = 30  # Frame rate for the game
 PLAYER_SPEED = 5  # Number of pixels to move the character
 
-# Set the base path for asset loading
+# Image Paths
 BASE_PATH = Path(__file__).resolve().parent
+IMAGE_PATH = str(BASE_PATH) + '/images'
 
 
 def main():
@@ -24,14 +29,10 @@ def main():
     # Create the game window
     window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
     pygame.display.set_caption('Realistic Character Movement')
+    clock = pygame.time.Clock()  # Create a clock object to control frame rate
     
-    # Create a clock object to control frame rate
-    clock = pygame.time.Clock()
-    
-    # Load assets
-    path_to_images = str(BASE_PATH) + '/images'
     # Load the player character's image
-    player_img = pygame.image.load(path_to_images + '/person_down_1.png')
+    player_img = pygame.image.load(f'{IMAGE_PATH}/person_down_1.png')
 
     # Initialize player character's position and direction
     player_rect = player_img.get_rect()
@@ -87,8 +88,10 @@ def main():
 
             # Calculate the current animation step
             player_step_position = math.floor(player_step_count / step_delay) + 1
+
             # Load the character image corresponding to the new direction and step position
-            player_img = pygame.image.load(path_to_images + f'/person_{new_direction}_{player_step_position}.png')
+            player_img = pygame.image.load(f'{IMAGE_PATH}/person_{new_direction}_{player_step_position}.png')
+
             # Update the current direction
             direction = new_direction
         else:

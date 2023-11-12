@@ -3,16 +3,21 @@ from pygame.locals import *
 import sys
 from snow import Snowflake
 
-# Constants
-BLACK = (0, 0, 0)  # Black color constant
-WHITE = (255, 255, 255)  # White color constant
+# Colors
+BLACK = (0, 0, 0)  # Black color
+WHITE = (255, 255, 255)  # White color
+
+# Screen Dimensions
 WINDOW_WIDTH = 800  # Width of the window
 WINDOW_HEIGHT = 600  # Height of the window
+
+# Game Settings
 FRAMES_PER_SECOND = 30  # Frame rate for the game
 NUM_SNOWFLAKES = 100  # Number of snows to generate
 
+
 def main():
-    '''Main function to run the snow animation.'''
+    '''Main function to animate snow.'''
     # Initialize Pygame
     pygame.init()
 
