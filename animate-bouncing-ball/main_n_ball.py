@@ -1,13 +1,18 @@
 import pygame
 from pygame.locals import *
 import sys
-from ball import Ball  # Import the Ball class from ball.py
+from ball import Ball
 
-# Constants
-DARK_GRAY = (75, 75, 75)  # Color constant for dark grey color
-WHITE = (255, 255, 255)  # Color constant for white
+
+# Colors
+DARK_GRAY = (75, 75, 75)  # Dark-grey color
+WHITE = (255, 255, 255)  # White color
+
+# Screen Dimensions
 WINDOW_WIDTH = 800  # Width of the window
 WINDOW_HEIGHT = 600  # Height of the window
+
+# Game Settings
 FRAMES_PER_SECOND = 30  # Frame rate for the game
 N_BALLS = 7  # Number of balls to create
 
@@ -45,9 +50,8 @@ def main():
 
     # Main loop
     while True:
-        # Event handling
-        for event in pygame.event.get():
-            if event.type == QUIT:
+        for event in pygame.event.get():  # Handle events
+            if event.type == QUIT:  # Exit the main loop if the user wants to quit
                 pygame.quit()
                 sys.exit()
 

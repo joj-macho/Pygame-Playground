@@ -2,6 +2,11 @@ import pygame
 import random
 from pathlib import Path
 
+# Image paths
+BASE_PATH = Path(__file__).resolve().parent  # Base path for asset loading
+BALL_IMAGE_PATH = f'{BASE_PATH}/images/ball.png'
+
+
 class Ball:
     '''Class to represent the ball in the animation.'''
 
@@ -19,17 +24,11 @@ class Ball:
         self.window_height = window_height
 
         # Load ball image asset
-        self.load_ball_image()
+        self.image = pygame.image.load(BALL_IMAGE_PATH)
 
         # Initialize variables
         self.initialize_position()
         self.initialize_speed()
-
-    def load_ball_image(self):
-        '''Load the ball image asset.'''
-        base_path = Path(__file__).resolve().parent
-        path_to_ball = str(base_path) + '/images/ball.png'
-        self.image = pygame.image.load(path_to_ball)
 
     def initialize_position(self):
         '''Initialize the position of the ball.'''
