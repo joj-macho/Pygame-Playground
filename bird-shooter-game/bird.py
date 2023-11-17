@@ -28,7 +28,7 @@ class Bird:
         self.window_height = window_height
         self.load_bird_images()  # Load bird images to get width and height
         self.x = 0
-        self.y = random.randint(0, window_height - self.height)
+        self.y = random.randint(0, self.window_height - self.height)
         self.speed = random.randint(BIRD_SPEED_MIN, BIRD_SPEED_MAX)
         self.frame = 0
         self.flap_interval = BIRD_FLAP_INTERVAL
