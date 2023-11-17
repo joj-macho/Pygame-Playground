@@ -30,7 +30,7 @@ The game revolves around the interaction between the player-controlled block and
    - Food blocks spawning at random intervals.
    - Continuous checks for collisions between the player block and food blocks.
 
-- **Player Movement**: Players can control the block's movement using arrow keys (up, down, left, right) or wsad keys. The block moves smoothly in the specified direction.
+- **Player Movement**: Players can control the block's movement using arrow keys (up, down, left, right) or WASD keys. The block moves smoothly in the specified direction.
 
 - **Food Spawning**: Food blocks spawn at random positions on the screen at intervals.
 
@@ -40,14 +40,14 @@ The game revolves around the interaction between the player-controlled block and
 
 ### How to Play
 
-1. **Directional Movement**: Use the arrow keys or wsad (up / w, down / s, left / a, right / d) to move the player block in the desired direction.
+1. **Directional Movement**: Use the arrow keys or WASD (up / w, down / s, left / a, right / d) to move the player block in the desired direction.
 2. **Consuming Food**: Move the player block to collide with the spawned food blocks to consume them.
 3. **Scoring**: The game has a simple scoring system, eating a food item increments your score by 1. Players can aim to consume as many food blocks as possible.
 
 ### Game Output
 
 - When you run the game, it will display a window containing the block eater game.
-- The player-controlled block will be present on the screen, and you can move it using the arrow keys or wsad keys.
+- The player-controlled block will be present on the screen, and you can move it using the arrow keys or WASD keys.
 - Food blocks will spawn at random intervals.
 - The goal is to move the player block to consume the spawned food blocks.
 - Continuous gameplay allows for prolonged engagement.

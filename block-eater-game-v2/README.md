@@ -32,14 +32,14 @@ This version builds upon the mechanics of Version 1, introducing different types
 
 ### How to Play
 
-1. **Directional Movement**: Use the arrow keys or wsad (up / w, down / s, left / a, right / d) to move the player block in the desired direction.
+1. **Directional Movement**: Use the arrow keys or WASD (up / w, down / s, left / a, right / d) to move the player block in the desired direction.
 2. **Consuming Food**: Move the player block to collide with the spawned food blocks to consume them.
 3. **Scoring**: Different food types have varied scores - green (1 point), blue (2 points), and red (5 points). Aim for a higher score.
 
 ### Game Output
 
 - When you run the game, it will display a window containing the block eater game.
-- The player-controlled block will be present on the screen, and you can move it using the arrow keys or wsad keys.
+- The player-controlled block will be present on the screen, and you can move it using the arrow keys or WASD keys.
 - Food blocks will spawn at random intervals.
 - The goal is to move the player block to consume the spawned food blocks. Consume various food types to achieve a higher score.
 - Continuous gameplay allows for prolonged engagement.
