@@ -81,3 +81,9 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# TODO:
+# Pause and Resume
+# Add increasing difficulty
+# Time Limit
+# Visual Effects
